@@ -24,36 +24,28 @@ if (astronautCount <= 7) {
     console.log("Date:" + date);
     console.log("Time:" + time);
     console.log("Astronaut Count: " + astronautCount);
-
+// add logic below to verify all astronauts are ready
     if (astronautStatus = 'ready');
+// add logic below to verify the total mass does not exceed the maximum limit of 850000
     if (totalMassKg < maximumMassLimit);
     console.log("Crew Mass: " + crewMassKg + "kg");
 
+// add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
     if (fuelTempCelsius >= -300 || fuelTempCelsius <= -150);
     console.log("Fuel Mass: " + fuelMassKg + "kg");
     console.log("Shuttle Mass: " + shuttleMassKg + "kg");
     console.log("Total Mass: " + totalMassKg + "kg");
     console.log("Fuel Temperature: " + fuelTempCelsius + "°C");
 
-
+// add logic below to verify the fuel level is at 100%
     if (fuelLevel = Number('100%'));
+// add logic below to verify the weather status is clear
     if (weatherStatus = 'clear');
     console.log("Weather Status: " + weatherStatus);
 
     console.log("Have a safe trip astronauts!");
+// Verify shuttle launch can proceed based on above conditions
 } else {
     console.log("Failed Flight... Abort Launch.");
 }
 
-
-// add logic below to verify all astronauts are ready
-
-// add logic below to verify the total mass does not exceed the maximum limit of 850000
-
-// add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
-
-// add logic below to verify the fuel level is at 100%
-
-// add logic below to verify the weather status is clear
-
-// Verify shuttle launch can proceed based on above conditions
