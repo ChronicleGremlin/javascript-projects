@@ -33,10 +33,13 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
 
 
 function askForNumber() {
+
   numMeals = input.question("How many meals would you like to make?");
   
   /// CODE YOUR SOLUTION TO PART B here ///
- 
+ while (numMeals < 1 || numMeals > 6 ){
+  numMeals = input.question("Please enter a number 1-6")
+ }
  
 
   return numMeals;
