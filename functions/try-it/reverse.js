@@ -1,5 +1,12 @@
-function reverse(str) {
-   let lettersArray = str.split('');
+function reverse(thisIsAString) {
+   let lettersArray = thisIsAString.split('');
    let reversedLettersArray = lettersArray.reverse();
-   return reversedLettersArray.join('');
+   let reversedLetterArrayJoined = reversedLettersArray.join('');
+
+   return reversedLetterArrayJoined;
 }
+
+let endInfo = reverse("Hiii! This is a test!");
+console.log(endInfo);
+
+console.log(reverse("Hiii! This is a test!"));
