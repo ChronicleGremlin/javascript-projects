@@ -18,23 +18,6 @@ console.log(reverseCharacters(testString));
 let testStringTwo = 12345;
 console.log(reverseCharacters(testStringTwo));
 
-// Part Two: Reverse Digits
-
-// 1. Add an if statement to reverseCharacters to check the typeof the parameter.
-// 2. If typeof is ‘string’, return the reversed string as before.
-// 3. If typeof is ’number’, convert the parameter to a string, reverse the characters, then convert it back into a number.
-// 4. Return the reversed number.
-// 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
-
-// Part Three: Complete Reversal
-
-// 1. Define and initialize an empty array.
-// 2. Loop through the old array.
-// 3. For each element in the old array, call reverseCharacters to flip the characters or digits.
-// 4. Add the reversed string (or number) to the array defined in part ‘a’.
-// 5. Return the final, reversed array.
-// 6. Be sure to print the results from each test case in order to verify your code.
-
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
