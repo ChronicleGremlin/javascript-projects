@@ -1,5 +1,16 @@
 //Create an anonymous function and set it equal to a variable.
+let practice = function(myArg) {
+    if (typeof myArg === "number") {
+       return myArg * 3;
+    } else if (typeof myArg === "string"){
+        return "ARRR!";
+    } else {
+        return myArg;
+    }
 
+ }
+
+console.log(practice(5));
 /* Your function should:
 a) If passed a number, return the tripled value.
 b) If passed a string, return the string “ARRR!”
