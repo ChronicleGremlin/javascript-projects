@@ -9,4 +9,5 @@ function factorial(integer){
 }
 
 
+
 //Skill boost! Add validation to return an error message if the function is passed a string, negative number or a decimal value.
