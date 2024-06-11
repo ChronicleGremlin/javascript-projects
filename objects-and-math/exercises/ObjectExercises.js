@@ -4,7 +4,7 @@ let superChimpOne = {
    mass: 9,
    age: 6,
    astronautID: 1,
-   move: function() {return Math.floor(Math.random()*11)}
+   move: function () { return Math.floor(Math.random() * 11) }
 };
 
 let salamander = {
@@ -13,7 +13,7 @@ let salamander = {
    mass: 0.1,
    age: 5,
    astronautID: 2,
-   move: function() {return Math.floor(Math.random()*11)}
+   move: function () { return Math.floor(Math.random() * 11) }
 };
 
 let superChimpTwo = {
@@ -22,7 +22,7 @@ let superChimpTwo = {
    mass: 11,
    age: 6,
    astronautID: 3,
-   move: function() {return Math.floor(Math.random()*11)}
+   move: function () { return Math.floor(Math.random() * 11) }
 };
 
 let dog = {
@@ -31,7 +31,7 @@ let dog = {
    mass: 14,
    age: 5,
    astronautID: 4,
-   move: function() {return Math.floor(Math.random()*11)}
+   move: function () { return Math.floor(Math.random() * 11) }
 };
 
 let waterBear = {
@@ -40,7 +40,7 @@ let waterBear = {
    mass: "0.0000000001",
    age: 1,
    astronautID: 5,
-   move: function() {return Math.floor(Math.random()*11)}
+   move: function () { return Math.floor(Math.random() * 11) }
 };
 
 let crew = [superChimpOne, superChimpTwo, salamander, dog, waterBear];
@@ -54,18 +54,18 @@ console.log("\n");
 // Start an animal race!
 
 
-function fitnessTest(testingAstronauts){
+function fitnessTest(testingAstronauts) {
    let results = [], numSteps, turns;
-   for (let i = 0; i < testingAstronauts.length; i++){
-       numSteps = 0;
-       turns = 0;
-       while(numSteps < 20){
-       numSteps += testingAstronauts[i].move();
-       turns++;
-       }
-       results.push(`${testingAstronauts[i].name} took ${turns} turns to take 20 steps.`);
+   for (let i = 0; i < testingAstronauts.length; i++) {
+      numSteps = 0;
+      turns = 0;
+      while (numSteps < 20) {
+         numSteps += testingAstronauts[i].move();
+         turns++;
+      }
+      results.push(`${testingAstronauts[i].name} took ${turns} turns to take 20 steps.`);
    }
    return results;
-  }
+}
 
 console.log(fitnessTest(crew));
