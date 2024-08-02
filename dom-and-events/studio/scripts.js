@@ -42,7 +42,7 @@ function init(){
     })
 
     moveUp.addEventListener('click', () => {
-        rocketship.style.backgroundColor = "red"
+        rocketship.style.top
     })
 
 
